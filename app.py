@@ -87,7 +87,7 @@ def predict(home, opp, oppstart, xtrain, ytrain):
 def main():
     st.title("Baseball Result Prediction")
     team_abbreviations = ['ARI', 'ATL', 'BAL', 'BOS', 'CHC', 'CWS', 'CIN', 'CLE', 'COL', 'DET', 'HOU', 'KC', 'LAA', 'LAD', 'MIA', 'MIL', 'MIN', 'NYM', 'NYY', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEX', 'TOR', 'WSH']
-    team = st.selectbox("Team", sorted(team_abbreviations))
+    team = st.selectbox("Home Team", sorted(team_abbreviations))
 
     start_year = st.number_input("Start Year", min_value=2018, max_value=2050, value=2018, step=1)
     end_year = st.number_input("End Year", min_value=2018, max_value=2050, value=2023, step=1)
